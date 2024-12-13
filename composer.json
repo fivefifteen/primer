@@ -1,0 +1,57 @@
+{
+  "name": "fivefifteen/primer",
+  "version": "0.0.1",
+  "description": "A WordPress theme boilerplate. The perfect starting point for your custom WordPress theme.",
+  "type": "wordpress-theme",
+  "authors": [
+    {
+      "name": "Five Fifteen",
+      "email": "hello@fivefifteen.com",
+      "homepage": "https://fivefifteen.com"
+    },
+    {
+      "name": "Kodie Grantham",
+      "email": "kodie.grantham@gmail.com",
+      "homepage": "https://kodieg.com"
+    }
+  ],
+  "keywords": [
+    "boilerplate",
+    "example",
+    "starter",
+    "template",
+    "theme",
+    "wordpress"
+  ],
+  "homepage": "https://github.com/fivefifteen/primer",
+  "license": "MIT",
+  "scripts": {
+    "build": "vendor/bin/piler -y",
+    "fetch": "vendor/bin/fetcher install",
+    "setup": [
+      "@fetch",
+      "@build"
+    ]
+  },
+  "require-dev": {
+    "fivefifteen/fetcher": "0.0.4",
+    "fivefifteen/piler": "0.0.3"
+  },
+  "extra": {
+    "fetcher": {
+      "dependencies": {
+        "bluzky/nice-select2": "github:2.1.0",
+        "eduardoboucas/include-media": "github:1.4.10"
+      }
+    },
+    "piler": {
+      "compile": {
+        "style.css": "scss/style.scss",
+        "scripts.js": [
+          "bluzky/nice-select2/dist/js/nice-select2.js",
+          "js/*.js"
+        ]
+      }
+    }
+  }
+}
