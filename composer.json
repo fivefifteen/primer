@@ -24,7 +24,7 @@
     "wordpress"
   ],
   "homepage": "https://github.com/fivefifteen/primer",
-  "license": "MIT",
+  "license": "GPL-2.0",
   "scripts": {
     "build": "vendor/bin/piler -y",
     "fetch": "vendor/bin/fetcher install",
