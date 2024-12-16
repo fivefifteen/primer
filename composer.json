@@ -33,6 +33,14 @@
       "@build"
     ]
   },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "require": {
+    "composer/installers": "^2.3"
+  },
   "require-dev": {
     "fivefifteen/fetcher": "0.0.4",
     "fivefifteen/piler": "0.0.3"
