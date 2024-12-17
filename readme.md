@@ -20,6 +20,7 @@
 
 - [Features](#features)
 - [Requirements](#requirements)
+- [Usage](#usage)
 - [Commands](#commands)
 - [Related Projects](#related-projects)
 - [License Information](#license-information)
@@ -40,6 +41,15 @@
 
 - [PHP] 8.1 or above
 - [Composer]
+
+
+## Usage
+
+Run the following command (*replacing "my-new-theme" with your theme's slug*):
+
+```sh
+composer create-project fivefifteen/primer my-new-theme
+```
 
 
 ## Commands
