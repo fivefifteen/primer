@@ -33,6 +33,11 @@
       "@build"
     ]
   },
+  "scripts-descriptions": {
+    "build": "Compiles/minifies JavaScript & CSS/SCSS files",
+    "fetcher": "Runs Fetcher commands",
+    "setup": "Installs frontend dependencies and builds them"
+  },
   "config": {
     "allow-plugins": {
       "composer/installers": true
