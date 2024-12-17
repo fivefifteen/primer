@@ -32,9 +32,9 @@
 - JavaScript & CSS/SCSS compilation/minification via [Piler]
 - Boilerplate code for configuring custom post types, taxonomies, and user roles
 - Some sensible plugin hooks:
-    - Gravity Forms: Disable the built-in theme (so we can create a custom one)
-    - Updraft Plus: Prevent backups being created for non-production environments
-    - Yoast SEO: Custom breadcrumb separator when using the `yoast_breadcrumb` function
+    - [Gravity Forms]: Disable the built-in theme (so we can create a custom one)
+    - [Updraft Plus]: Prevent backups being created for non-production environments
+    - [Yoast SEO]: Custom breadcrumb separator when using the `yoast_breadcrumb` function
 
 
 ## Requirements
@@ -77,7 +77,10 @@ GPL-2.0 (See the [license.md file](license.md) for more info)
 [Composer]: https://getcomposer.org
 [Fetcher]: https://github.com/fivefifteen/fetcher
 [GitHub]: https://github.com
+[Gravity Forms]: https://gravityforms.com
 [npm]: https://npmjs.com
 [PHP]: https://php.net
 [Piler]: https://github.com/fivefifteen/piler
+[Updraft Plus]: https://updraftplus.com
 [WordUp]: https://github.com/fivefifteen/wordup
+[Yoast SEO]: https://yoast.com
