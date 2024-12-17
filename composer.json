@@ -27,9 +27,9 @@
   "license": "GPL-2.0",
   "scripts": {
     "build": "vendor/bin/piler -y --",
-    "fetch": "vendor/bin/fetcher install",
+    "fetcher": "vendor/bin/fetcher",
     "setup": [
-      "@fetch",
+      "@fetcher install",
       "@build"
     ]
   },
