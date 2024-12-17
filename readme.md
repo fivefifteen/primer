@@ -16,11 +16,58 @@
 </div>
 
 
-## Notice
+## Table of Contents
 
-This is very much in a pre-alpha stage so you probably shouldn't use it quite yet.
+- [Features](#features)
+- [Requirements](#requirements)
+- [Commands](#commands)
+- [Related Projects](#related-projects)
+- [License Information](#license-information)
+
+
+## Features
+
+- Front-end dependency management using [GitHub] & [npm] as repositories via [Fetcher]
+- JavaScript & CSS/SCSS compilation/minification via [Piler]
+- Boilerplate code for configuring custom post types, taxonomies, and user roles
+- Some sensible plugin hooks:
+    - Gravity Forms: Disable the built-in theme (so we can create a custom one)
+    - Updraft Plus: Prevent backups being created for non-production environments
+    - Yoast SEO: Custom breadcrumb separator when using the `yoast_breadcrumb` function
+
+
+## Requirements
+
+- [PHP] 8.1 or above
+- [Composer]
+
+
+## Commands
+
+| Command | Description |
+| --- | --- |
+| `composer build` | Compiles/minifies JavaScript & CSS/SCSS files via [Piler] |
+| `composer fetcher` | Displays a list of available [Fetcher] commands |
+| `composer fetcher install [...dependencies]` | Installs dependencies from [GitHub] or [npm] |
+| `composer setup` | Installs frontend dependencies and builds them |
+
+
+## Related Projects
+
+- [Basis] - A WordPress boilerplate. Get a local dockerized WordPress project up and running complete with secrets encryption, dependency management/compilation, and more by running a single command.
+- [WordUp] - A WordPress Deployer Recipe.
 
 
 ## License Information
 
 GPL-2.0 (See the [license.md file](license.md) for more info)
+
+
+[Basis]: https://github.com/fivefifteen/basis
+[Composer]: https://getcomposer.org
+[Fetcher]: https://github.com/fivefifteen/fetcher
+[GitHub]: https://github.com
+[npm]: https://npmjs.com
+[PHP]: https://php.net
+[Piler]: https://github.com/fivefifteen/piler
+[WordUp]: https://github.com/fivefifteen/wordup
