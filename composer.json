@@ -26,7 +26,7 @@
   "homepage": "https://github.com/fivefifteen/primer",
   "license": "GPL-2.0",
   "scripts": {
-    "build": "vendor/bin/piler -y",
+    "build": "vendor/bin/piler -y --",
     "fetch": "vendor/bin/fetcher install",
     "setup": [
       "@fetch",
