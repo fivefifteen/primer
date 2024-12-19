@@ -60,6 +60,7 @@ composer create-project fivefifteen/primer my-new-theme
 | `composer fetcher` | Displays a list of available [Fetcher] commands |
 | `composer fetcher install [...dependencies]` | Installs dependencies from [GitHub] or [npm] |
 | `composer setup` | Installs frontend dependencies and builds them |
+| `composer watch` | Watches for changes to JavaScript & CSS/SCSS files and recompiles/minifies as needed |
 
 
 ## Related Projects

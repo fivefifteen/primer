@@ -31,12 +31,14 @@
     "setup": [
       "@fetcher install",
       "@build"
-    ]
+    ],
+    "watch": "vendor/bin/piler -yW --"
   },
   "scripts-descriptions": {
     "build": "Compiles/minifies JavaScript & CSS/SCSS files",
     "fetcher": "Runs Fetcher commands",
-    "setup": "Installs frontend dependencies and builds them"
+    "setup": "Installs frontend dependencies and builds them",
+    "watch": "Watches for changes to JavaScript & CSS/SCSS files and recompiles/minifies as needed"
   },
   "config": {
     "allow-plugins": {
