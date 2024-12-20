@@ -43,7 +43,8 @@
   "config": {
     "allow-plugins": {
       "composer/installers": true
-    }
+    },
+    "process-timeout": 0
   },
   "require": {
     "composer/installers": "^2.3"
