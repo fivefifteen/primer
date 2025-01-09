@@ -8,19 +8,22 @@
   <body <?php body_class(); ?>>
     <header>
       <div class="container">
-        <div class="header-brand">
+        <div class="header-logo-container">
           <a href="<?=home_url()?>">
-            <img src="<?=IMAGES?>/svg/logo.svg" class="logo">
+            <img src="<?=IMAGES?>/svg/logo.svg" class="header-logo">
           </a>
         </div>
 
         <?php
-        wp_nav_menu(array(
-          'theme_location'  => 'header-navigation',
-          'depth'           => 2
-        ));
+        get_template_part('parts/header', 'navigation-btn');
 
-        get_template_part('parts/header', 'nav-btn');
+        wp_nav_menu(array(
+          'container_class' => 'header-navigation-container',
+          'depth'           => 1,
+          'fallback_cb'     => function ($args) { echo '<div></div>'; }, // Fallback to an empty div so the flex layout doesn't get messed up
+          'menu_id'         => 'header-navigation',
+          'theme_location'  => 'header-navigation'
+        ));
         ?>
       </div>
     </header>

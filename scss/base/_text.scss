@@ -1,0 +1,27 @@
+body {
+  color: $text-color;
+  font: font('primary', 'small');
+
+  @include media('>=tablet') {
+    font: font('primary', 'slight');
+  }
+
+  @include media('>=desktop') {
+    font: font('primary', 'normal');
+  }
+}
+
+a {
+  color: $primary-color;
+  transition: 0.1s all ease-in-out;
+
+  &:hover {
+    color: $text-color;
+  }
+
+  &.darkmode {
+    &:hover {
+      color: $darkmode-text-color;
+    }
+  }
+}

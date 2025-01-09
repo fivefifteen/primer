@@ -1,0 +1,157 @@
+header {
+  background-color: $secondary-color;
+  color: $darkmode-text-color;
+  padding: 25px 0;
+  position: relative;
+
+  @include media('>=desktop') {
+    padding: 50px 0;
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media('>=desktop') {
+      gap: 50px;
+    }
+  }
+
+  .header-logo-container {
+    flex-grow: 1;
+
+    a {
+      display: inline-block;
+
+      img {
+        display: block;
+        max-height: 125px;
+        max-width: 300px;
+      }
+    }
+  }
+
+  .header-navigation-btn-container {
+    @include media('>=desktop') {
+      @include hidden;
+    }
+
+    .header-navigation-btn {
+      align-items: center;
+      background: none;
+      border: 0;
+      color: $primary-color;
+      display: flex;
+      font: font('primary', 'normal', 'bold');
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+
+      &:not(.open) {
+        .opened {
+          @include hidden;
+        }
+      }
+
+      &.open {
+        .closed {
+          @include hidden;
+        }
+
+        .menu-icon {
+          width: $header-navigation-btn-width + ($header-navigation-btn-width / 5);
+
+          span:nth-of-type(1) {
+            transform: rotate(45deg);
+            transform-origin: top left;
+          }
+
+          span:nth-of-type(2) {
+            transform-origin: center;
+            width: 0;
+          }
+
+          span:nth-of-type(3) {
+            transform: rotate(-45deg);
+            transform-origin: bottom left;
+          }
+        }
+      }
+
+      .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $header-navigation-btn-line-gap;
+        height: $header-navigation-btn-height;
+        width: $header-navigation-btn-width;
+
+        span {
+          background-color: $header-navigation-btn-line-color;
+          border-radius: $header-navigation-btn-line-border-radius;
+          display: block;
+          flex-grow: 1;
+          opacity: 1;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .header-navigation-container {
+    @include media('<desktop') {
+      background-color: $secondary-color;
+      left: 0;
+      max-height: 0;
+      transition: max-height 0.25s ease-out;
+      overflow: hidden;
+      position: absolute;
+      top: calc(100% - 1px); // Fixes a weird issue where sometimes there's a 1px gap
+      width: 100%;
+      z-index: 515;
+
+      &.open {
+        max-height: 100vh;
+      }
+    }
+
+    .menu {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      @include media('<desktop') {
+        margin-bottom: 50px;
+      }
+
+      @include media('>=desktop') {
+        flex-direction: row;
+        gap: 50px;
+      }
+
+      .menu-item {
+        font: font('primary', 'normal');
+        margin: 0;
+        padding: 0;
+
+        a {
+          @extend .darkmode;
+          display: inline-block;
+        }
+
+        &.current-menu-item {
+          a {
+            color: $darkmode-text-color;
+            font: font('primary', 'normal', 'bold');
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

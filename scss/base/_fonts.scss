@@ -1,0 +1,64 @@
+$verdana: 'verdana';
+
+$site-font-sizes: (
+  micro: 12px/20px,
+  tiny: 15px/28px,
+  small: 18px/32px,
+  slight: 21px/40px,
+  normal: 24px/44px,
+  standard: 30px/48px,
+  medium: 36px/52px,
+  large: 42px/56px,
+  big: 48px/60px,
+  huge: 54px/64px,
+  colossal: 60px/68px
+);
+
+$site-tight-font-sizes: (
+  micro: 12px/14px,
+  tiny: 15px/18px,
+  small: 18px/24px,
+  slight: 21px/28px,
+  normal: 24px/32px,
+  standard: 30px/38px,
+  medium: 36px/46px
+);
+
+$site-font-weights: (
+  thin: 100,
+  extralight: 200,
+  ultralight: 200,
+  light: 300,
+  normal: 400,
+  regular: 400,
+  medium: 500,
+  demibold: 600,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  ultrabold: 800
+);
+
+$site-fonts: (
+  primary: ($verdana, $site-font-sizes),
+  primary-tight: ($verdana, $site-tight-font-sizes)
+);
+
+@function font($font: 'primary', $size: 'normal', $weight: 'normal', $style: 'normal', $variant: 'normal') {
+  $info: map-get($site-fonts, $font);
+  $family: nth($info, 1);
+
+  @if (type-of($size) == 'string') {
+    $size: map-get(nth($info, 2), $size);
+  }
+
+  @if (type-of($weight) == 'string' && $weight != 'lighter' && $weight != 'bolder') {
+    @if (length($info) == 3) {
+      $weight: map-get(nth($info, 3), $weight);
+    } @else {
+      $weight: map-get($site-font-weights, $weight);
+    }
+  }
+
+  @return unquote($style) unquote($variant) $weight $size $family;
+}

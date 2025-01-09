@@ -1,0 +1,12 @@
+@mixin clear() {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+@mixin hidden() {
+  display: none !important;
+  visibility: hidden !important;
+}

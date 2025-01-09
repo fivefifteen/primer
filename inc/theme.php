@@ -27,7 +27,7 @@ function primer_setup() {
 
   // Register navigation menus
   register_nav_menu('header-navigation', 'Header Navigation');
-  // register_nav_menu('footer-navigation', 'Footer Navigation');
+  register_nav_menu('footer-navigation', 'Footer Navigation');
 
   // Add Editor Style
   // add_editor_style('editor-style.css');

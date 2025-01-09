@@ -56,8 +56,9 @@
   "extra": {
     "fetcher": {
       "dependencies": {
-        "bluzky/nice-select2": "github:2.1.0",
         "eduardoboucas/include-media": "github:1.4.10",
+        "kodie/class-toggler.js": "https://gist.github.com/kodie/b51c3b626e674bce5d415fea163a7d26/archive/96354f15857114f38d4cc533b07256b7474affd5.zip",
+        "kodie/sticky-footer.js": "https://gist.github.com/kodie/9ce028db02cdfbc12b221cfab2671f1d/archive/3da2e3d95b94b84333540d2e1b4397fd69b2e187.zip",
         "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
       }
     },
@@ -65,7 +66,8 @@
       "compile": {
         "style.css": "scss/style.scss",
         "scripts.js": [
-          "bluzky/nice-select2/dist/js/nice-select2.js",
+          "kodie/class-toggler.js",
+          "kodie/sticky-footer.js",
           "js/*.js"
         ]
       }

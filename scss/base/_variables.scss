@@ -1,0 +1,29 @@
+$bastille: #2a2a36;
+$black: #000000;
+$noble: #969696;
+$turtle-green: #82bb45;
+$white: #ffffff;
+
+$primary-color: $turtle-green;
+$secondary-color: $bastille;
+$text-color: $bastille;
+$darkmode-text-color: $white;
+
+$breakpoints: (
+  phone: 320px,
+  large-phone: 600px,
+  tablet: 768px,
+  desktop: 1024px,
+  large-desktop: 1150px
+);
+
+$container-mobile-buffer: 28px;
+$container-tablet-buffer: 64px;
+$container-desktop-buffer: 92px;
+$container-max-width: 1072px;
+
+$header-navigation-btn-height: 25px;
+$header-navigation-btn-width: 25px;
+$header-navigation-btn-line-color: $primary-color;
+$header-navigation-btn-line-gap: 5px;
+$header-navigation-btn-line-border-radius: 5px;

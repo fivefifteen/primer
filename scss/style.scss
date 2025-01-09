@@ -6,8 +6,15 @@ Author URI: https://fivefifteen.com
 Version: 0.0.2
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
 
-@import "bluzky/nice-select2/dist/css/nice-select2";
 @import "eduardoboucas/include-media/dist/include-media";
 @import "wordpress/wordpress-core";
+
+@import "base/layout";
+@import "base/text";
+
+@import "components/footer";
+@import "components/header";

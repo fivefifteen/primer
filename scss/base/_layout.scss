@@ -1,0 +1,33 @@
+body {
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+%container,
+.container {
+  margin: 0 $container-mobile-buffer;
+  max-width: $container-max-width;
+
+  @include media('>=tablet') {
+    margin: 0 $container-tablet-buffer;
+  }
+
+  @include media('>=desktop', '<#{$container-max-width + ($container-desktop-buffer * 2)}') {
+    margin: 0 $container-desktop-buffer;
+  }
+
+  @include media('>=#{$container-max-width + ($container-desktop-buffer * 2)}') {
+    margin: 0 auto;
+  }
+}
+
+.clear,
+%clear {
+  @include clear;
+}
+
+.hidden,
+%hidden {
+  @include hidden;
+}
