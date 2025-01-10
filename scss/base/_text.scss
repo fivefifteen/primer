@@ -20,6 +20,8 @@ a {
   }
 
   &.darkmode {
+    color: $primary-color;
+
     &:hover {
       color: $darkmode-text-color;
     }
