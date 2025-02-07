@@ -50,7 +50,7 @@
     "composer/installers": "^2.3"
   },
   "require-dev": {
-    "fivefifteen/fetcher": "0.0.4",
+    "fivefifteen/fetcher": "0.0.5",
     "fivefifteen/piler": "0.0.3"
   },
   "extra": {

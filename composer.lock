@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2639c7f6eeed29caee0c69475a5d091",
+    "content-hash": "51e9ce8408825e861e4ad6852fa0a4dc",
     "packages": [
         {
             "name": "composer/installers",
@@ -310,16 +310,16 @@
         },
         {
             "name": "fivefifteen/fetcher",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivefifteen/fetcher.git",
-                "reference": "4487cfdbc2a51dbdb5559bfafb9598f16f2b85dd"
+                "reference": "8157d76fdf48a672c3dd0bf05310fde812e8ff35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivefifteen/fetcher/zipball/4487cfdbc2a51dbdb5559bfafb9598f16f2b85dd",
-                "reference": "4487cfdbc2a51dbdb5559bfafb9598f16f2b85dd",
+                "url": "https://api.github.com/repos/fivefifteen/fetcher/zipball/8157d76fdf48a672c3dd0bf05310fde812e8ff35",
+                "reference": "8157d76fdf48a672c3dd0bf05310fde812e8ff35",
                 "shasum": ""
             },
             "require": {
@@ -396,9 +396,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fivefifteen/fetcher/issues",
-                "source": "https://github.com/fivefifteen/fetcher/tree/0.0.4"
+                "source": "https://github.com/fivefifteen/fetcher/tree/0.0.5"
             },
-            "time": "2024-12-13T18:31:30+00:00"
+            "time": "2025-02-07T19:34:45+00:00"
         },
         {
             "name": "fivefifteen/piler",
