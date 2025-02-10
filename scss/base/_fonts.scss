@@ -1,4 +1,4 @@
-$verdana: 'verdana';
+$primary-font: 'verdana';
 
 $site-font-sizes: (
   micro: 12px/20px,
@@ -40,8 +40,8 @@ $site-font-weights: (
 );
 
 $site-fonts: (
-  primary: ($verdana, $site-font-sizes),
-  primary-tight: ($verdana, $site-tight-font-sizes)
+  primary: ($primary-font, $site-font-sizes),
+  primary-tight: ($primary-font, $site-tight-font-sizes)
 );
 
 @function font($font: 'primary', $size: 'normal', $weight: 'normal', $style: 'normal', $variant: 'normal') {
