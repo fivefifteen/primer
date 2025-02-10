@@ -70,6 +70,9 @@
           "kodie/sticky-footer.js",
           "js/*.js"
         ]
+      },
+      "config": {
+        "event_source": "/reloader.php"
       }
     }
   }
