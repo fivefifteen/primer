@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51e9ce8408825e861e4ad6852fa0a4dc",
+    "content-hash": "0e7a056ff4bc6c264264683dbadc67ef",
     "packages": [
         {
             "name": "composer/installers",
@@ -310,16 +310,16 @@
         },
         {
             "name": "fivefifteen/fetcher",
-            "version": "0.0.5",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivefifteen/fetcher.git",
-                "reference": "8157d76fdf48a672c3dd0bf05310fde812e8ff35"
+                "reference": "1124c7d8a0d320b601f79efd3524fe4ae91f05d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivefifteen/fetcher/zipball/8157d76fdf48a672c3dd0bf05310fde812e8ff35",
-                "reference": "8157d76fdf48a672c3dd0bf05310fde812e8ff35",
+                "url": "https://api.github.com/repos/fivefifteen/fetcher/zipball/1124c7d8a0d320b601f79efd3524fe4ae91f05d9",
+                "reference": "1124c7d8a0d320b601f79efd3524fe4ae91f05d9",
                 "shasum": ""
             },
             "require": {
@@ -396,22 +396,22 @@
             ],
             "support": {
                 "issues": "https://github.com/fivefifteen/fetcher/issues",
-                "source": "https://github.com/fivefifteen/fetcher/tree/0.0.5"
+                "source": "https://github.com/fivefifteen/fetcher/tree/0.1.0"
             },
-            "time": "2025-02-07T19:34:45+00:00"
+            "time": "2025-03-02T18:19:21+00:00"
         },
         {
             "name": "fivefifteen/piler",
-            "version": "0.0.3",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivefifteen/piler.git",
-                "reference": "f1682ef578adacc63444f0c43f346516cda82fb4"
+                "reference": "fa9479dd1791a526cf22cdba957cecb2d0c81982"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivefifteen/piler/zipball/f1682ef578adacc63444f0c43f346516cda82fb4",
-                "reference": "f1682ef578adacc63444f0c43f346516cda82fb4",
+                "url": "https://api.github.com/repos/fivefifteen/piler/zipball/fa9479dd1791a526cf22cdba957cecb2d0c81982",
+                "reference": "fa9479dd1791a526cf22cdba957cecb2d0c81982",
                 "shasum": ""
             },
             "require": {
@@ -469,9 +469,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fivefifteen/piler/issues",
-                "source": "https://github.com/fivefifteen/piler/tree/0.0.3"
+                "source": "https://github.com/fivefifteen/piler/tree/0.1.0"
             },
-            "time": "2024-12-13T18:41:10+00:00"
+            "time": "2025-03-01T22:25:21+00:00"
         },
         {
             "name": "matthiasmullie/minify",
