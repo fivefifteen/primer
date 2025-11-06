@@ -51,6 +51,17 @@ function primer_enqueue() {
 }
 
 
+// Dequeues scripts and styles that are not needed
+add_action('wp_enqueue_scripts', 'primer_dequeue', 99);
+function primer_dequeue() {
+  if (!is_admin()) {
+    wp_dequeue_style('classic-theme-styles');
+    wp_dequeue_style('global-styles');
+    wp_dequeue_style('wp-block-library');
+  }
+}
+
+
 // Adds the Google Analytics tracking code to the head
 add_action('wp_head', 'primer_google_analytics_tracking_code');
 function primer_google_analytics_tracking_code() {
